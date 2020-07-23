@@ -1,0 +1,102 @@
+//**********************************************************************
+//如果保存的网络20S还连不上的话进入smartconfig模式。正常连接断网后会自动重连。
+
+//*200523:8路继电器输出控制
+//*200704:修改为直接写死账号密码
+//**********************************************************************
+#include "main.h"
+
+#define  VERSION   "V3011"
+
+
+void Relay1_On (void)
+{
+  digitalWrite(Relay1, RELAY_ON);
+  
+  BLINKER_LOG("Realy1 on!");
+  Button1.color("#008000");                   //green
+  Button1.text("已经打开");
+  Button1.print("on");
+}
+
+void Relay1_Off (void)
+{
+  digitalWrite(Relay1, RELAY_OFF);
+
+  BLINKER_LOG("Realy1 off!");
+  Button1.color("#FF0000");                   //red
+  Button1.text("已经关闭");
+  Button1.print("off");
+}
+
+void Relay2_On (void)
+{
+  digitalWrite(Relay2, RELAY_ON);
+  
+  BLINKER_LOG("Realy2 on!");
+  Button2.color("#008000");                   //green
+  Button2.text("已经打开");
+  Button2.print("on");
+}
+
+void Relay2_Off (void)
+{
+  digitalWrite(Relay2, RELAY_OFF);
+
+  BLINKER_LOG("Realy2 off!");
+  Button2.color("#FF0000");                   //red
+  Button2.text("已经关闭");
+  Button2.print("off");
+}
+
+void Relay3_On (void)
+{
+  digitalWrite(Relay3, RELAY_ON);
+  
+  BLINKER_LOG("Realy3 on!");
+  Button3.color("#008000");                   //green
+  Button3.text("已经打开");
+  Button3.print("on");
+}
+
+void Relay3_Off (void)
+{
+  digitalWrite(Relay3, RELAY_OFF);
+
+  BLINKER_LOG("Realy3 off!");
+  Button3.color("#FF0000");                   //red
+  Button3.text("已经关闭");
+  Button3.print("off");
+}
+
+void Relay4_On (void)
+{
+  digitalWrite(Relay4, RELAY_ON);
+  
+  BLINKER_LOG("Realy4 on!");
+  Button4.color("#008000");                   //green
+  Button4.text("已经打开");
+  Button4.print("on");
+}
+
+void Relay4_Off (void)
+{
+  digitalWrite(Relay4, RELAY_OFF);
+
+  BLINKER_LOG("Realy4 off!");
+  Button4.color("#FF0000");                   //red
+  Button4.text("已经关闭");
+  Button4.print("off");
+}
+
+void Relay5_On (void)
+{
+  digitalWrite(Relay5, RELAY_ON);
+  
+  BLINKER_LOG("Realy5 on!");
+  Button5.color("#008000");                   //green
+  Button5.text("已经打开");
+  Button5.print("on");
+}
+
+void Relay5_Off (
